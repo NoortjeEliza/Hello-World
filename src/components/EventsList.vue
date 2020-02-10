@@ -5,8 +5,10 @@
     Check out our upcoming events
     </h2>
     <div class="columns is-multiline">
-      <div class="column is-one-quarter">
-          <EventCard />
+      <div v-for="event in events" :event="event" :key="event.id" class="column is-one-quarter">
+        <router-link :to="'/event/' + event.id">
+          <EventCard :event="event" />
+        </router-link>
       </div>
     </div>
   </div>
@@ -34,7 +36,7 @@ export default {
             'https://placekitten.com/500/500',
           ],
           location: '1234 Fancy Ave',
-          date: '12-25-2019',
+          date: '12-12-2019',
           time: '11:30'
         },
         {
@@ -47,7 +49,7 @@ export default {
             'https://placekitten.com/500/500'
           ],
           location: '1234 Dog Alley',
-          date: '11-21-2019',
+          date: '11-11-2019',
           time: '12:00'
         }
       ]
