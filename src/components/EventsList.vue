@@ -32,8 +32,8 @@ export default {
           featuredImage: 'https://placekitten.com/500/500',
           images: [
             'https://placekitten.com/500/500',
-            // 'https://placekitten.com/500/500',
-            // 'https://placekitten.com/500/500',
+            'https://placekitten.com/500/500',
+            'https://placekitten.com/500/500',
           ],
           location: '1234 Fancy Ave',
           date: '12-12-2019',
